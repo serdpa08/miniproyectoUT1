@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 1 sesión 5</title>
+    <script>
+        function mostrarValorRango(valor){
+            document.getElementById("camporangoamostrar").value=valor;
+        }
+    </script>
+</head>
+<body>
+    <h1>FORMULARIOS</h1>
+    
+    <form action="" method="" name="formulariocompleto1" id="formcompletoid1">
+        <fieldset>
+            <legend>Formulario completo</legend>
+            <label for="campotexto1">Nombre: </label>
+            <input type="text" name="" id="campotexto1" placeholder="Introduce el nombre" title="Debes introducir un nombre"><br>
+            
+            <label for="areatexto1id">Comentarios: </label><br>
+            <textarea name="areatexto1" id="areatexto1id" cols="60" rows="15" placeholder="Comentarios aquí"></textarea><br>
+            <label for="campobusqueda1id">Término de búsqueda: </label>
+            <input type="search" name="campobusqueda1" id="campobusqueda1id" placeholder="Introduce el término de búsqueda" size="50" maxlength="40">
+            <br>
+            <label for="campopwd1id">Contraseña: </label>
+            <input type="password" name="campopwd1" id="campopwd1id" placeholder="Introduce contraseña">
+            <input type="file" name="fichero1" id="fichero1id" ><br>
+            <label for="camponumero1id">Introduzca Número</label>
+            <input type="number" id="camponumero1id" name="camponumero1" step="4"><br>
+            <label for="campourl1id">Campo de tipo URL: </label>
+            <input type="url" name="campourl1" id="campourl1id" required><br>
+            <label for="campoemail1id">Introduce Fecha: </label>
+            <input type="date" name="campodate1" id="campodate1id" required><br>
+            <label for="campodate1id">Introduce Email: </label>
+            <input type="email" name="campoemail1" id="campoemail1id" required><br>
+             <label for="campotime1id">Introduce tiempo: </label>
+            <input type="time" name="campotime1" id="campotime1id"><br>
+            <label for="campocolor1id">Color: </label>
+            <input type="color" name="campocolor1" id="campocolorid1">
+            <br>
+            <label for="camporange1id">Rango de valores</label>
+            <input type="range" name="camporange1" id="camporange1id" min="0" max="10" value="5" step="1" onchange="mostrarValorRango(this.value)">
+            <input type="text" name="valor" id="camporangoamostrar"><br>
+            <input type="text" name="campodni1" id="campodniid" placeholder="Introduce tu DNI" title="introduce tu DNI" autofocus required pattern="[0-9]{8}[A-Z]{1}">
+            <input type="submit" value="Enviar">
+            
+        </fieldset>
+    </form>
+    
+
+    
+</body>
+</html>
