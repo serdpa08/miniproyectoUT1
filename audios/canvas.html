@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        
+    
+        <h2>Elemento de tipo Canvas</h2>
+        <canvas id="canvas1" width="300" height="150" style="border: 1px solid black;">
+            tu navegador no soporta el elemento Canvas
+        </canvas>
+        <script >
+        var canvas= document.getElementById('canvas1');
+        var contexto = canvas.getContext("2d");
+        contexto.fillStyle="#FF0000";
+        contexto.fillRect(0,0,150,75);
+        </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tablas</title>
+    <style>
+        table, th, tr, td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tablas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Curso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pablo</td>
+                <td colspan="2">Utrilla</td>
+                
+            </tr>
+
+            <tr>
+                <td>Cristian</td>
+                <td>Pérez</td>
+                <td rowspan="2">2</td>
+            </tr>
+
+            <tr>
+                <td>Sergio</td>
+                <td>de Pablos</td>
+                
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Fin</td>
+                <td></td>
+                <td>Fin</td>
+            </tr>
+
+        </tfoot>
+    </table>
+</body>
+</html>
